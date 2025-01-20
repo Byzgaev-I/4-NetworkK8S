@@ -84,18 +84,6 @@ spec:
 kubectl run test-multitool --image=wbitt/network-multitool
 ```
 
-Проверка доступа к nginx (порт 9001):
-```bash
-kubectl exec test-multitool -- curl nginx-multitool-svc:9001
-```
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to nginx!</title>
-...
-</html>
-```
 
 Проверка доступа к multitool (порт 9002):
 ```bash
@@ -104,6 +92,9 @@ kubectl exec test-multitool -- curl nginx-multitool-svc:9002
 ```
 WBITT Network MultiTool (with NGINX) - nginx-multitool-5bc776b6c6-vb2gh - 10.1.46.11 - HTTP: 8080 , HTTPS: 443
 ```
+
+![image](https://github.com/Byzgaev-I/4-NetworkK8S/blob/main/4-1.png)
+
 
 ## Задание 2. Создать Service и обеспечить доступ к приложениям снаружи кластера
 
@@ -147,6 +138,8 @@ curl 10.0.2.15:30080
 ...
 </html>
 ```
+
+![image](https://github.com/Byzgaev-I/4-NetworkK8S/blob/main/4-2.png)
 
 ## Выполненные задачи
 
